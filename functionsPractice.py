@@ -27,3 +27,11 @@ def rev_string(s):
 
 print(rev_string("Hello World"))
 print(rev_string("AI")) 
+
+# Write a Python function called num_within() to check whether a number falls in a given range.
+
+def num_within(num, start, end):
+    return start <= num <= end
+
+print(num_within(15, 10, 20))
+print(num_within(5, 10, 20))
