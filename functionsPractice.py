@@ -19,3 +19,11 @@ def mult_list(numbers):
 print(mult_list([1,2,3]))
 print(mult_list([]))
 print(mult_list([15]))
+
+# Write a Python function called rev_string() to reverse a string.
+
+def rev_string(s):
+    return s[::-1]
+
+print(rev_string("Hello World"))
+print(rev_string("AI")) 
