@@ -35,3 +35,17 @@ def num_within(num, start, end):
 
 print(num_within(15, 10, 20))
 print(num_within(5, 10, 20))
+#Write a Python function called pascal() that prints out the first n rows of Pascal's triangle.
+
+def pascal(n):
+    triangle = []
+    for i in range(n):
+        row = [1] * (i + 1)
+        for j in range(1, i):
+            row[j] = triangle[i-1][j-1] + triangle[i-1][j]
+        triangle.append(row)
+    
+    for row in triangle:
+        print(' '.join(map(str, row)).center(n * 2))
+
+pascal(5)
